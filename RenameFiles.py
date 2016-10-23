@@ -1,5 +1,5 @@
 # Udacity course - PROGRAMMING FOUNDATIONS WITH PYTHON
-# Programm 1.1: Rename files
+# Programm 2: Rename files
 # Rename esch photo in the folder, deleting the numbers
 
 import os
