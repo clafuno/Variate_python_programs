@@ -17,6 +17,11 @@ def draw():
 	tur.color("blue")
 	tur.speed(2)
 	draw_square(tur)
+#Create second turtle
+	ter = turtle.Turtle()
+	ter.shape("arrow")
+	ter.speed(3)
+	ter.circle(80) #Draw a circle(radius)
 	window.exitonclick()
 
 draw()
