@@ -3,18 +3,21 @@
 
 import turtle
 
-def draw_square():
+def draw_square(chosenturtle):
+	for i in range(0,4):
+		chosenturtle.forward(100)
+		chosenturtle.right(90)
+
+def draw():
 #Create the window
 	window = turtle.Screen()
 	window.bgcolor("white")
-
-#Grab the turtle and indicate the movement to draw a square
+#Create & customize turtle
 	tur = turtle.Turtle()
-	for i in range(0,4):
-		tur.forward(100)
-		tur.right(90)
-
+	tur.color("blue")
+	tur.speed(2)
+	draw_square(tur)
 	window.exitonclick()
 
-draw_square()
+draw()
 
