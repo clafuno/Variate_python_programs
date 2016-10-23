@@ -10,14 +10,9 @@ def draw_square():
 
 #Grab the turtle and indicate the movement to draw a square
 	tur = turtle.Turtle()
-	tur.forward(100)
-	tur.right(90)
-	tur.forward(100)
-	tur.right(90)
-	tur.forward(100)
-	tur.right(90)
-	tur.forward(100)
-	tur.right(90)
+	for i in range(0,4):
+		tur.forward(100)
+		tur.right(90)
 
 	window.exitonclick()
 
