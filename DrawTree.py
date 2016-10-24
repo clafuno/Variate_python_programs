@@ -23,8 +23,8 @@ def branch (t,angle,length,end_level):
 	t.down() #Start drawing
 	t.forward(length)
 
-	if len(pos) < end_level:
-		branch(t,angle,length,end_level)
+	# if len(pos) < end_level:
+	# 	branch(t,angle,length,end_level)
 
 
 
