@@ -13,7 +13,7 @@ def branch (t,angle,length,level,end_level):
 	level = level + 1
 	#print level, end_level
 
-	branch(t,angle,2*length/3,level,end_level) #Right branches
+	branch(t,angle,3*length/4,level,end_level) #Right branches
 
 	t.up() #Stop drawing
 	t.goto(pos.pop()) #Go to prev intersection
@@ -24,13 +24,17 @@ def branch (t,angle,length,level,end_level):
 	t.down() #Start drawing
 	t.forward(length)
 
-	branch(t,-angle,2*length/3,level,end_level) #Left branches
+	branch(t,-(angle+20),3*length/4,level,end_level) #Left branches
 
+	#NOTE: t.heading()
 
 def draw():
 	global pos
 	pos = []
+	angle = 30
+	length = 100
 	level = 0
+	end_level = 6
 	window = turtle.Screen()
 	window.bgcolor("white")
 
@@ -41,7 +45,7 @@ def draw():
 
 	t.left(90)
 	t.forward(100)
-	branch(t,30,100,level,5)
+	branch(t,angle,length,level,end_level)
 
 	window.exitonclick()
 
