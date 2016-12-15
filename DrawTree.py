@@ -31,7 +31,7 @@ def branch (t,angle,length,level,end_level):
 def draw():
 	global pos
 	pos = []
-	angle = 30
+	angle = 35
 	length = 100
 	level = 0
 	end_level = 6
